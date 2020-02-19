@@ -15,8 +15,15 @@ exports.onCreateWebpackConfig = ({
 }) => {
   const path = require("path")  // eslint-disable-line
   const autoprefixer = require("autoprefixer")  // eslint-disable-line
+  const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin")  // eslint-disable-line
 
   actions.setWebpackConfig({
+    resolve: {
+      // Add '.ts' and '.tsx' as resolvable extensions.
+      // extensions: [".ts", ".tsx", ".js", "jsx", ".json"],
+      // This is what we use to manage module paths (instead of the node-modules package)
+      plugins: [new TsconfigPathsPlugin()]
+    },
     module: {
       rules: [
         {

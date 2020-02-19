@@ -12,10 +12,8 @@
     "baseUrl": "./src",
     "paths": {
       "@src/*": ["./*"],
-      "@client/*": ["client/*"],
-      "@server/*": ["server/*"],
-      "@static/*": ["client/static/*"],
-      "@styles/*": ["client/styles/*"]
+      "@static/*": ["static/*"],
+      "@styles/*": ["styles/*"]
     },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,

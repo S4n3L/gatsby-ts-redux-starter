@@ -10,11 +10,11 @@
     "target": "es5",
     "moduleResolution": "node",
     "baseUrl": "./src",
-/*     "paths": {
+    "paths": {
       "@src/*": ["./*"],
       "@static/*": ["static/*"],
       "@styles/*": ["styles/*"]
-    }, */
+    },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
 

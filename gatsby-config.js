@@ -49,7 +49,7 @@ module.exports = {
         windowKey: "__PRELOADED_STATE__",
       },
     },
-    {
+/*     {
       resolve: "gatsby-plugin-root-import",
       options: {
         "@src": path.join(__dirname, "src"),
@@ -57,7 +57,7 @@ module.exports = {
         "@pages": path.join(__dirname, "src/pages"),
         "@static": path.join(__dirname, "src/static")
       }
-    }
+    } */
 
 
 

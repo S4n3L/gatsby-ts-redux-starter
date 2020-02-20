@@ -1,7 +1,7 @@
-import { createAction } from "@src/store/Root/actionHelper"
 import { AnyAction, Dispatch } from "redux"
 import { ThunkDispatch } from "redux-thunk"
 
+import { createAction } from "@src/store/Root/actionHelper"
 import { EScrollDirection } from "@src/store/app/state"
 
 type FunctionType = (...args: any[]) => any

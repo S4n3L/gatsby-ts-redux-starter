@@ -1,3 +1,5 @@
+const path = require("path")  // eslint-disable-line
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Default Starter",
@@ -47,8 +49,15 @@ module.exports = {
         windowKey: "__PRELOADED_STATE__",
       },
     },
-
-
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        "@src": path.join(__dirname, "src"),
+        "@components": path.join(__dirname, "src/components"),
+        "@pages": path.join(__dirname, "src/pages"),
+        "@static": path.join(__dirname, "src/static")
+      }
+    }
 
 
 

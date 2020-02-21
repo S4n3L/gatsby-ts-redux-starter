@@ -1,0 +1,6 @@
+@import "./variables";
+
+@mixin page-init {
+  padding-top: $margin-top-desktop;
+  height: 100%;
+}

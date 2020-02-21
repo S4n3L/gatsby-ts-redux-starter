@@ -1,9 +1,7 @@
 import produce from "immer"
 
-// import { AppActions, AppActionTypes } from "@src/store/app/actions"
-import { AppActions, AppActionTypes } from "./actions"
-// import { EScrollDirection, IAppState } from "@src/store/app/state"
-import { EScrollDirection, IAppState } from "./state"
+import { AppActions, AppActionTypes } from "@src/store/App/actions"
+import { EScrollDirection, IAppState } from "@src/store/App/state"
 
 export const initialState: IAppState = {
   activePage: 0,

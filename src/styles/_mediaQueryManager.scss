@@ -1,0 +1,25 @@
+@import "./variables";
+
+$iphone-portrait: 360px;
+$ipad-mini-portrait: 768px;
+// $ipad-pro-small-land: 1112px;
+$desktop-optimal: 1024px;
+$desktop-high-res: 2400px;
+
+/* stylelint-disable */
+@mixin respond ($displayBreakpoint) {
+  @if $displayBreakpoint == under-iphone-portrait {
+    @media (max-width: $iphone-portrait) { @content };
+  }
+  @if $displayBreakpoint == under-ipad-mini-portrait {
+    @media (max-width: $ipad-mini-portrait) { @content };
+  }
+  @if $displayBreakpoint == under-desktop-optimal {
+    @media (max-width: $desktop-optimal) { @content };
+  }
+
+  @if $displayBreakpoint == above-desktop-optimal {
+    @media (min-width: $desktop-optimal) { @content };
+  }
+}
+/* stylelint-enable */

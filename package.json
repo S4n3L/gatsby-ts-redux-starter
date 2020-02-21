@@ -18,9 +18,10 @@
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-react-redux": "^1.1.0-0",
+    "gatsby-plugin-sass": "^2.1.29",
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-plugin-typescript": "^2.1.27",
-    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-sharp": "^2.3.13",
     "immer": "^5.3.6",
     "node-sass": "^4.13.1",
@@ -36,6 +37,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^8.0.2",
+    "sass-resources-loader": "^2.0.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0"
   },
   "devDependencies": {
@@ -45,8 +47,6 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
-    "gatsby-plugin-root-import": "^2.0.5",
-    "gatsby-plugin-scss-typescript": "^4.0.10",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   },

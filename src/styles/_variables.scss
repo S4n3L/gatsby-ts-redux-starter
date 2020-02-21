@@ -1,0 +1,75 @@
+/*
+
+Font types:
+
+Roboto:
+
+Thin    - 100
+Light   - 300 +
+Regular - 400
+Medium  - 500
+Bold    - 700 +
+Black   - 900
+
+Nunito:
+
+Extra-light - 200
+Light       - 300 +
+Regular     - 400 +
+Semi-bold   - 600
+Bold        - 700 +
+Extra-bold  - 800
+
+*/
+
+$content-font-weight-light: 300;
+$title-font-weight-light: 100;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$color-white: #ffffff;
+$color-ddb-yellow: #FBD10D;
+$color-ddb-green: #BAE0C2;
+$color-ddb-red: #EE3E40;
+$color-ddb-blue: #99BAC2;
+$color-ddb-black: #241F21;
+$color-ddb-gray: #CCCECE;
+
+$color-yellow: #FFDF39;
+$color-green: #51BDAA;
+$color-purple: #8751BD;
+$color-red: #EF6969;
+$color-black: #343434;
+$color-light-gray: #C2C1C1;
+
+$width-desktop: 100vw;
+
+$sidebar-width: 8%;
+$page-left-content-padding: 8.6rem;
+$margin-top-desktop: 5.2rem;
+$page-padding-bottom-desktop: 5.2rem;
+
+$layer-zero: 0;
+$layer-one: 10;
+$layer-two: 11;
+$layer-three: 12;
+
+/* stylelint-disable */
+:export {
+  color-yellow: $color-yellow;
+  color-green: $color-green;
+  color-purple: $color-purple;
+  color-black: $color-black;
+
+  color-ddb-yellow: $color-ddb-yellow;
+  color-ddb-green: $color-ddb-green;
+  color-ddb-red: $color-ddb-red;
+  color-ddb-blue: $color-ddb-blue;
+  color-ddb-black: $color-ddb-black;
+  color-ddb-gray: $color-ddb-gray;
+
+  margin-top-desktop: $margin-top-desktop;
+}
+/* stylelint-enable */

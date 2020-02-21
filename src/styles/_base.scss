@@ -1,0 +1,28 @@
+@import "./variables";
+@import "./mediaQueryManager";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit
+}
+
+html {
+  box-sizing: border-box;
+  // 1rem = 10px => 10px / 16px (browser default) = 62.5%
+  font-size: calc(90vw / 120); // default desktop - 1280
+  overflow: hidden;   // no classic scroll effect
+
+  @include respond(under-desktop-optimal) {
+    // font-size: calc(100vw / 200);
+  }
+
+  @include respond(under-ipad-mini-portrait) {
+    // font-size: 80%;
+  }
+}

@@ -1,0 +1,13 @@
+/* Custom font loader example. Your custom fonts should be in the /static/fonts folder */
+
+/*
+@font-face {
+  font-family: "brignell-square-regular";
+  src:
+    url(./BrignellSquare-Regular.eot) format('eot'),
+    url(./BrignellSquare-Regular.ttf) format('truetype'),
+    url(./BrignellSquare-Regular.woff) format('woff'),
+    url(./BrignellSquare-Regular.woff2) format('woff2');
+  font-style: "regular";
+}
+ */

@@ -14,11 +14,34 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: `${__dirname}/src/images`,
-      },
+        name: "image",
+        path: `${__dirname}/src/static/image`
+      }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "svg",
+        path: `${__dirname}/src/static/svg`
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "video",
+        path: `${__dirname}/src/static/video`
+      }
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["BrignellSquare"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
+/*     {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "gatsby-starter-default",
@@ -29,7 +52,7 @@ module.exports = {
         display: "minimal-ui",
         icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       }
-    },
+    }, */
     {
       resolve: "gatsby-plugin-react-redux",
       options: {

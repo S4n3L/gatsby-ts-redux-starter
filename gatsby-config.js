@@ -1,11 +1,8 @@
-const path = require("path")  // eslint-disable-line
-
-
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Default Starter",
-    description: "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
-    author: "@gatsbyjs",
+    title: "Gatsby - Redux, Scss and typescript custom starter",
+    description: "",
+    author: "@s4n3l",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

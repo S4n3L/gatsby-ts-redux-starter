@@ -1,5 +1,6 @@
 const path = require("path")  // eslint-disable-line
 
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Default Starter",
@@ -37,22 +38,21 @@ module.exports = {
       options: {
         custom: {
           families: ["BrignellSquare"],
-          urls: ["/fonts/fonts.css"],
+          urls: [`${__dirname}/src/static/fonts/loadCustomFonts.css`],
         },
       },
     },
-/*     {
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
+        name: "gatsby-redux-ts-starter",
+        short_name: "Gatsby-RTSS",
         start_url: "/",
         background_color: "#663399",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       }
-    }, */
+    },
     {
       resolve: "gatsby-plugin-react-redux",
       options: {

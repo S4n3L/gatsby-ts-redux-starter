@@ -6,8 +6,7 @@ The absolute path import managed by `tsconfig.json` file "paths" section. To mak
 
 ## Redux and redux thunk
 
-We use the official gatsby package named `gatsby-plugin-react-redux`. This can handle the server side store creation according to the following article: https://github.com/le0nik/gatsby-plugin-react-redux
-For client side redux initialization, we use the `ConnectedRouterWrapper` hook, placed in the `gatsby-browser.js` file.
+On the server side Redux handled by the `wrapRootElement` and `onRenderBody` hooks on the `gatsby-ssr.js` file. Here we pass the initial state in a global window object. The client side in the `gatsby-browser.js` file uses the `wrapRootElement` hook, to inject the store into the provider.
 
 ## SCSS modules and automated type generation for scss types
 

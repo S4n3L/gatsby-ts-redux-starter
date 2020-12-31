@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "svg",
-        path: `${__dirname}/src/static/svg`
+        name: "icon",
+        path: `${__dirname}/src/static/icon`
       }
     },
     {
@@ -39,17 +39,18 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "gatsby-redux-ts-starter",
-        short_name: "Gatsby-RTSS",
-        start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
-      }
-    },
+    // {
+    //   resolve: "gatsby-plugin-manifest",
+    //   options: {
+    //     name: "gatsby-redux-ts-starter",
+    //     short_name: "Gatsby-RTSS",
+    //     start_url: "/",
+    //     background_color: "#663399",
+    //     theme_color: "#663399",
+    //     display: "minimal-ui",
+    //     icon: ""
+    //   }
+    // },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

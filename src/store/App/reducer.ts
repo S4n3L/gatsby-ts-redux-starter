@@ -1,16 +1,11 @@
 import produce from "immer"
 
 import { AppActions, AppActionTypes } from "@src/store/App/actions"
-import { EScrollDirection, IAppState } from "@src/store/App/state"
+import { EScrollDirection, AppStateType, initialState } from "@src/store/App/state"
 
-export const initialState: IAppState = {
-  activePage: 0,
-  scrollDirection: EScrollDirection.NONE,
-  toDoHow: "",
-  toDoWhat: "",
-}
 
-export const appReducer = (state: IAppState = initialState, action: AppActions) => {
+
+export const appReducer = (state: AppStateType = initialState, action: AppActions) => {
    switch (action.type) {
     case AppActionTypes.SET_ACTIVE_PAGE:
       return produce(state, (draftState) => {draftState.activePage = action.payload})
